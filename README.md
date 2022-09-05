@@ -21,7 +21,7 @@ https://hanabeeeee.github.io/web-portfolio/
     
 ### 사용 라이브러리
 
-        - AOS
-        - Pagenable
-        - jQuery
-        - Bootstrap
+     - AOS
+     - Pagenable
+     - jQuery
+     - Bootstrap
