@@ -11,6 +11,7 @@ https://hanabeeeee.github.io/web-portfolio/
     5. 처음에는 투명했다가 페이지를 내리면 색이 채워지는 역동적인 Header
     6. Portfolio 페이지에서 이동 버튼을 누르면 새 창이 열리며 다른 페이지로 연결
     7. JS, CSS로 구현한 막대 애니메이션 그래프
+    8. 스크롤을 없애고 휠로만 페이지를 넘길 수 있게 조정
 
 ### 사용 언어
 
