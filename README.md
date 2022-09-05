@@ -17,3 +17,11 @@ https://hanabeeeee.github.io/web-portfolio/
     - CSS3
     - HTML5
     - JavaScript
+    
+    
+### 사용 라이브러리
+
+        - AOS
+        - Pagenable
+        - jQuery
+        - Bootstrap
