@@ -1,5 +1,6 @@
 @import url('./reset.css');
 
+
 :root {
     --main-color: #774E64;
     --sub-color01:#825DA4;
@@ -19,13 +20,18 @@ body {
 }
 
 .container {
+    margin-top: 0;
+    margin-bottom: 0;
     margin-left: 10%;
     margin-right: 10%;
-    /* outline: 2px solid red; */
+    /* outline: 2px solid blue; */
 }
 
 h1 {
+    font-size: 48px;
     font-family: 'Codystar', cursive;
+    padding-top: 110px;
+    margin-bottom: 10px;
 }
 
 
@@ -94,6 +100,7 @@ header nav ul li a:hover, a:active {
 #main-visual {
     background: var(--sub-color01);
     height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,6 +120,7 @@ header nav ul li a:hover, a:active {
     color: var(--point-color02);
     font-size: 128px;
     margin-bottom: 44px;
+    letter-spacing: 0.17em;
 }
 
 #main-visual .visual-box p {
@@ -143,7 +151,7 @@ header nav ul li a:hover, a:active {
 
 #main-visual .main-title {
     width: 100%;
-    margin-top: -120px;
+    margin-top: -220px;
 }
 
 #main-visual .main-title h1 {
@@ -185,88 +193,151 @@ header nav ul li a:hover, a:active {
 
 
 
-/******** about ***/
 
 
-#about h1 {
-    font-size: 64px;
+
+/************* about **********/
+
+#container {
+    /* outline: 1px solid red; */
+    overflow: hidden;
+
+}
+
+#fullpage h1 {
     color: var(--main-color);
     text-align: center;
-    margin-top: 260px;
-    margin-bottom: 140px;
 }
 
-#about .about-visual {
+#fullpage .about01 {
+    height: 100vh;
+    width: 100vw;
+    background: #ededed;
+}
+
+#fullpage .about01 .about-visual {
     display: flex;
+    box-sizing: border-box;
 }
 
-#about .about-visual .textBox {
-    margin-top: 165px;
+#fullpage .about01 .about-visual img {
+    width: 40%;
+    height: 40%;
+    margin-left: 75px;
+
+}
+
+#fullpage .about01-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#fullpage .about-visual .textBox {
+    margin-top: 60px;
     font-weight: 300;
     line-height: 46px;
     width: 500px;
     height: 282px;
-    border-top: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-top: 1px solid var(--sub-color01);
+    border-bottom: 1px solid var(--sub-color01);
     margin-left: 45px;
 }
 
-#about .about-visual .textBox p {
+#fullpage .about-visual .textBox p {
     padding: 0px 20px 0px 20px;
 }
 
-#about .text-about-container {
-    margin-top: 150px;
+#fullpage .text-about-container {
+    margin-top: 20px;
     margin-bottom: 150px;
     text-align: left;
-    margin-left: 160px;
+    margin-left: 70px;
     font-weight: 200;
     color: var(--main-color);
     text-align: left;
+    font-size: 24px;
+    line-height: 20px;
 }
 
-#about .text-about-container span {
+#fullpage .text-about-container span {
     font-weight: 700;
     color: var(--text-color);
 }
 
-#about .myInfo {
-    margin-left: 20%;
-    margin-right: 20%;
+
+
+#fullpage .myInfo {
+    height: 100vh;
+    background: var(--point-color01);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* outline: 5px solid red; */
 }
 
-#about .myInfo h2 {
+#fullpage .myInfo .info-container {
+    display: flex;
+    justify-content: center;
+    /* margin: 0 60px 0 60px; */
+    
+}
+
+#fullpage .myInfo h2 {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 64px;
-    color: var(--main-color);
-    margin-bottom: 50px;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 
-#about .myInfo li {
+#fullpage .myInfo li {
     color: var(--point-color02);
     font-weight: 200;
-    line-height: 38px;
-    padding-left: 25px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-bottom: 17px;
 }
 
-#about .myInfo li span {
+#fullpage .myInfo li span {
     font-weight: 700;
     font-size: 16px;
 }
 
-#about .myInfo li .circle {
+#fullpage .myInfo li .circle {
     color: var(--sub-color01);
     font-size: 12px;
 }
 
-#about .myInfo .infoBox {
-    margin-bottom: 164px;
+#fullpage .myInfo .infoBox {
+    border: 4px solid var(--bg-color);
+    margin-bottom: 10px;
+    width: 330px;
+    padding: 20px;
+    height: 360px;
+    border-radius: 5px;
+    margin: 10px;
 }
 
 
 
 
+#fullpage .infoBar {
+    height: 100vh;
+    /* outline: 1px solid red; */
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    background: #ededed;
+}
+
+
+.zt-span6 {
+    padding-top: 190px;
+    height: 100%;
+
+}
 
 .zt-skill-bar {
     color: #fff;
@@ -274,6 +345,8 @@ header nav ul li a:hover, a:active {
     line-height: 25px;
     height: 30px;
     margin-bottom: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
 
     background-color: rgba(0,0,0,0.1);
 
@@ -341,47 +414,75 @@ header nav ul li a:hover, a:active {
 
 
 
+
 /**************portfolio****/
 
+
 #portfolio h1 {
-    font-size: 64px;
     color: var(--main-color);
     text-align: center;
-    margin-top: 260px;
-    margin-bottom: 166px;
+}
+
+#portfolio .container {
+    height: 100vh;
 }
 
 #portfolio .galleryBox {
-    background: rgba(249, 249, 249, 0.541);
+    top: 130px;
+    box-sizing: border-box;
+    height: 600px;
+    background: #fff;
     border: 6px solid var(--main-color);
     border-radius: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 #portfolio .galleryBox .galleryBtn {
     border: 1px solid var(--main-color);
     background: var(--point-color02);
     padding: 0px 20px 0px 20px;
-    height: 47px;
+    height: 40px;
     text-align: center;
     width: 253px;
     border-radius: 40px;
     font-weight: 300;
-    margin: 125px 0px 125px 0px;
+    margin: 40px 0px 40px 0px;
 }
 
 #portfolio .galleryBox .galleryBtn p {
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 #portfolio .galleryBox .galleryImg {
     margin-bottom: 125px;
 }
 
+#portfolio .galleryBox .galleryImg img {
+    width: 48%;
+    height: 42%;
+    top: 37%;
+    display: block;
+    margin-right: 30px;
+    position: absolute;
+}
+
+#portfolio .galleryBox .icons {
+    position: absolute;
+    bottom: 60px;
+    right: 110px;
+    padding: 40px;
+    
+}
+
 #portfolio .galleryBox .textBox {
-    line-height: 55px;
+    line-height: 40px;
+    position: absolute;
+    left: 65px;
+    top: 150px;
+    font-size: 16px;
 }
 
 #portfolio .galleryBox .textBox .title {
@@ -393,7 +494,7 @@ header nav ul li a:hover, a:active {
 
 #portfolio .galleryBox .textBox .title i {
     color: var(--sub-color01);
-    padding: 7px;
+    padding: 10px;
     font-size: 36px;
 }
 
@@ -419,18 +520,21 @@ header nav ul li a:hover, a:active {
 
 
 
+
+
+
 /***************contact*****/
 
 #contact {
-    margin-bottom: 125px;
+    height: 100vh;
+    width: 100%;
 }
 
 #contact h1 {
-    font-size: 64px;
+    margin-top: 140px;
     color: var(--main-color);
     text-align: center;
-    margin-top: 260px;
-    margin-bottom: 166px;
+    margin-bottom: 130px;
 }
 
 #contact .contact-container {
@@ -468,55 +572,9 @@ header nav ul li a:hover, a:active {
 
 
 
+  
 
 
-/* ---- stats.js ---- */
 
-.count-particles{
-    background: #000022;
-    position: absolute;
-    top: 48px;
-    left: 0;
-    width: 80px;
-    color: #13E8E9;
-    font-size: .8em;
-    text-align: left;
-    text-indent: 4px;
-    line-height: 14px;
-    padding-bottom: 2px;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-  }
-  
-  .js-count-particles{
-    font-size: 1.1em;
-  }
-  
-  #stats,
-  .count-particles{
-    -webkit-user-select: none;
-    margin-top: 5px;
-    margin-left: 5px;
-  }
-  
-  #stats{
-    border-radius: 3px 3px 0 0;
-    overflow: hidden;
-  }
-  
-  .count-particles{
-    border-radius: 0 0 3px 3px;
-  }
-  
-  
-  /* ---- particles.js container ---- */
-  
-  #particles-js{
-    width: 100%;
-    height: 100%;
-    background-color: #7f7f7f;
-    background-image: url('');
-    background-size: cover;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-  }
+
+
