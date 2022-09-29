@@ -329,7 +329,7 @@ header nav ul li a:hover, a:active {
     width: 100%;
     margin-top: 0;
     padding-top: 0;
-    background: #ededed;
+    /* background: #ededed; */
 }
 
 
@@ -418,20 +418,34 @@ header nav ul li a:hover, a:active {
 /**************portfolio****/
 
 
+
+#portfolio {
+    width: 100vw;
+    height: 100vh;
+}
+
+.portfolio01 {
+    background: var(--point-color01);
+}
+
+.portfolio02
+{
+    background: var(--main-color)
+}
+
+
 #portfolio h1 {
     color: var(--main-color);
     text-align: center;
 }
 
-#portfolio .container {
-    height: 100vh;
-}
+
 
 #portfolio .galleryBox {
     top: 130px;
     box-sizing: border-box;
     height: 600px;
-    background: #fff;
+    background: var(--point-color02);
     border: 6px solid var(--main-color);
     border-radius: 40px;
     display: flex;
@@ -442,7 +456,7 @@ header nav ul li a:hover, a:active {
 
 #portfolio .galleryBox .galleryBtn {
     border: 1px solid var(--main-color);
-    background: var(--point-color02);
+    background: #fff;
     padding: 0px 20px 0px 20px;
     height: 40px;
     text-align: center;
